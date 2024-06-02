@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription au Service de Transport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, textarea {
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription au Service de Transport Sénégal-France</h1>
+        <form action="https://example.com/submit-form" method="post">
+            <label for="name">Nom complet:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Adresse email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Numéro de téléphone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="departure-address">Adresse de départ (au Sénégal):</label>
+            <input type="text" id="departure-address" name="departure-address" required>
+            
+            <label for="destination-address">Adresse de destination (en France):</label>
+            <input type="text" id="destination-address" name="destination-address" required>
+            
+            <label for="departure-date">Date de départ souhaitée:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+            
+            <label for="goods-type">Type de biens à transporter:</label>
+            <input type="text" id="goods-type" name="goods-type" required>
+            
+            <label for="goods-weight">Poids et dimensions des biens:</label>
+            <input type="text" id="goods-weight" name="goods-weight" required>
+            
+            <label for="remarks">Remarques sur les Colis:</label>
+            <textarea id="remarks" name="remarks"></textarea>
+            
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
+</body>
+</html>
